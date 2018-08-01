@@ -1,0 +1,26 @@
+{
+  "name": "org-flashcards",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "mobx": "^5.0.3",
+    "mobx-react": "^5.2.3",
+    "mobx-state-tree": "^3.0.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/App.css",
+    "watch:css": "postcss src/styles/index.css -o src/App.css -w",
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "postcss-cli": "^6.0.0",
+    "tailwindcss": "^0.6.4"
+  }
+}
